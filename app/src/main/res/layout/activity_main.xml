@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="3.0"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/movie"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded"
+        android:text="Movies"
+        android:textSize="30sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded"
+        android:text="Tv Shows"
+        android:textSize="30sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded"
+        android:text="Artists"
+        android:textSize="30sp"/>
+</LinearLayout>
