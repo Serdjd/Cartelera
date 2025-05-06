@@ -25,7 +25,7 @@ class Dialog: DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(DialogFragment.STYLE_NORMAL,R.style.AppTheme_FullScreenDialog)
+        setStyle(DialogFragment.STYLE_NORMAL,R.style.Base_Theme_Cartelera)
     }
 
     override fun onCreateView(
