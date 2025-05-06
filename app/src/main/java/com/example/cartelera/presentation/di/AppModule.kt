@@ -3,7 +3,7 @@ package com.example.cartelera.presentation.di
 import android.content.Context
 import androidx.room.Room
 import com.example.cartelera.BuildConfig
-import com.example.cartelera.data.api.TMDBService
+import com.example.cartelera.data.remote.api.TMDBService
 import com.example.cartelera.data.db.TMDBDataBase
 import dagger.Module
 import dagger.Provides

@@ -5,5 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ArtistList(
     @SerializedName("results")
-    val artists: List<Artist>
+    val artists: List<Artist>,
+    @SerializedName("total_pages")
+    val totalPages: Int
 )

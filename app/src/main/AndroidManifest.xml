@@ -17,13 +17,23 @@
         android:theme="@style/Theme.Cartelera"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.artist.ArtistActivity"
+            android:name=".presentation.artist.base.ArtistActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.tv.TvShowActivity"
+            android:name=".presentation.tv.base.TvShowActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.movie.MovieActivity"
+            android:name=".presentation.movie.base.MovieActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.movie.detail.MovieDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.artist.details.ArtistDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.tv.detail.series.SeriesActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.HomeActivity"

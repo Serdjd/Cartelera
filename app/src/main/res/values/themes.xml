@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.Cartelera" parent="Base.Theme.Cartelera" />
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
 </resources>

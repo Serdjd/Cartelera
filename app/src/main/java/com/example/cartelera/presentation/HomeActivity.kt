@@ -2,30 +2,32 @@ package com.example.cartelera.presentation
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.viewbinding.ViewBinding
-import com.example.cartelera.R
+import android.view.View
 import com.example.cartelera.databinding.ActivityMainBinding
-import com.example.cartelera.presentation.artist.ArtistActivity
-import com.example.cartelera.presentation.movie.MovieActivity
-import com.example.cartelera.presentation.tv.TvShowActivity
+import com.example.cartelera.presentation.artist.base.ArtistActivity
+import com.example.cartelera.presentation.movie.base.MovieActivity
+import com.example.cartelera.presentation.tv.base.TvShowActivity
 
 class HomeActivity : BaseActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setListeners()
     }
 
-    override fun initBinding(): ViewBinding {
-        return ActivityMainBinding.inflate(layoutInflater)
+    override fun initRoot(): View {
+        return binding.root
+    }
+
+    override fun initMain(): View {
+        return binding.main
     }
 
     fun setListeners() {
-        with(binding as ActivityMainBinding) {
+        with(binding) {
             movie.setOnClickListener {
                 val intent = Intent(this@HomeActivity, MovieActivity::class.java)
                 startActivity(intent)

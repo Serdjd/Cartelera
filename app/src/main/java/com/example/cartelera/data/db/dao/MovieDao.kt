@@ -1,5 +1,6 @@
 package com.example.cartelera.data.db.dao
 
+import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -15,7 +16,7 @@ interface MovieDao {
     @Query("DELETE FROM Movie")
     suspend fun deleteMovies()
 
-    @Query("SELECT * FROM Movie")
-    suspend fun getMovies() : List<Movie>
+    @Query("SELECT * FROM Movie order by arraived_at Asc")
+    fun getMovies() : PagingSource<Int, Movie>
 
 }

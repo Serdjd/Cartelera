@@ -15,7 +15,8 @@ import com.example.cartelera.data.model.tv.TvShow
         Movie::class,
         TvShow::class
     ],
-    version = 1
+    version = 1,
+    exportSchema = false
 )
 abstract class TMDBDataBase: RoomDatabase() {
     abstract fun artistDao(): ArtistDao

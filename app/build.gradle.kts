@@ -50,10 +50,12 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.paging)
 
     //Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.androidx.fragment.ktx)
 
     //Retrofit
     implementation(libs.retrofit)
@@ -68,6 +70,9 @@ dependencies {
     implementation (libs.kotlinx.coroutines.core)
     implementation (libs.kotlinx.coroutines.android)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    //Pagination
+    implementation(libs.androidx.paging.runtime)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
